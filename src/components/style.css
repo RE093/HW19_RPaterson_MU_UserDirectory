@@ -1,0 +1,10 @@
+img {
+    width: auto;
+    height: 72px;
+}
+
+/* Nav */
+.searchBar {
+    position: absolute;
+    right: 16px;
+}

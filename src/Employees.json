@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Zoey Stanley",
+        "phone": "(965)-470-5658",
+        "email": "zoey.stanley@example.com",
+        "dob": "09-18-1998",
+        "image": "../assets/zoeyStanley.jpg"
+    },
+    {
+        "name": "Zoe Anderson",
+        "phone": "(965)-470-1231",
+        "email": "zoe.anderson@example.com",
+        "dob": "02-21-1992",
+        "image": "../assets/zoeAnderson.jpg"
+    },
+    {
+        "name": "Walter Carr",
+        "phone": "(912)-423-5128",
+        "email": "walter.carr@example.com",
+        "dob": "01-13-1988",
+        "image": "../assets/walterCarr.jpg"
+    },
+    {
+        "name": "Walter Meyer",
+        "phone": "(123)-231-1228",
+        "email": "walter.meyer@example.com",
+        "dob": "03-09-1991",
+        "image": "../assets/walterMeyer.jpg"
+    },
+    {
+        "name": "Wallace Stephens",
+        "phone": "(123)-420-5618",
+        "email": "wallace.stepens@example.com",
+        "dob": "03-03-1994",
+        "image": "../assets/wallaceStephens.jpg"
+    },
+    {
+        "name": "Jack Sloan",
+        "phone": "(123)-430-5618",
+        "email": "jack.sloan@example.com",
+        "dob": "03-23-1993",
+        "image": "../assets/jackSloan.jpg"
+    },
+    {
+        "name": "Alice Smith",
+        "phone": "(103)-120-5218",
+        "email": "alice.smith@example.com",
+        "dob": "01-03-1994",
+        "image": "../assets/aliceSmith.jpg"
+    },
+    {
+        "name": "Mike Johnson",
+        "phone": "(002)-417-1618",
+        "email": "mike.johnson@example.com",
+        "dob": "03-03-1994",
+        "image": "../assets/mikeJohnson.jpg"
+    },
+    {
+        "name": "Alex Bird",
+        "phone": "(523)-120-5609",
+        "email": "alex.bird@example.com",
+        "dob": "12-08-1991",
+        "image": "../assets/alexBird.jpg"
+    },
+    {
+        "name": "Janice Hoff",
+        "phone": "(126)-020-3618",
+        "email": "janice.hoff@example.com",
+        "dob": "01-01-1990",
+        "image": "../assets/janiceHoff.jpg"
+    }
+]
