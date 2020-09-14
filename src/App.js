@@ -8,6 +8,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // add in search function using the search bar,
 // add in where you click a name, it filters it alphabetically or numerically
 
+// loop through the array, 
+// if employee[i].name.includes(search value) return value and render
+
+// to sort the employees alphabetically
+// employee.name.sort()
+
 class App extends React.Component {
 
   state = {
@@ -15,6 +21,7 @@ class App extends React.Component {
   };
 
   render() {
+
     return (
       <div className="employeeTable">
         <Nav />
@@ -30,13 +37,15 @@ class App extends React.Component {
           </thead>
           <tbody>
             {this.state.employees.map(thisEmployee => (
-            <Employee
-              image={thisEmployee.image}
-              name={thisEmployee.name}
-              phone={thisEmployee.phone}
-              email={thisEmployee.email}
-              dob={thisEmployee.dob}
-            />
+              <Employee
+                key={thisEmployee.name}
+                image={thisEmployee.image}
+                name={thisEmployee.name}
+                phone={thisEmployee.phone}
+                email={thisEmployee.email}
+                dob={thisEmployee.dob}
+                newEmail={"mailto:" + thisEmployee.email}
+              />
             ))}
           </tbody>
         </Table>

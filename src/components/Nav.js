@@ -5,7 +5,7 @@ import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 
 
-function Nav(props) {
+export default function Nav(props) {
     return (
         <Navbar bg="light" expand="lg">
         <Navbar.Brand href="#home">Employee Directory</Navbar.Brand>
@@ -19,5 +19,3 @@ function Nav(props) {
         </Navbar>
     );
 }
-
-export default Nav;
