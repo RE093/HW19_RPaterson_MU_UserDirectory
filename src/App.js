@@ -21,6 +21,12 @@ class App extends React.Component {
   };
 
   render() {
+    // const newEmployees = [...this.state.employees];
+    // for (const employee of newEmployees) {
+      
+    //   employee.src = require(employee.image);
+    // }
+
 
     return (
       <div className="employeeTable">
