@@ -15,7 +15,7 @@ class App extends React.Component {
     employees: {},
     pending: "",
     search: "",
-    sortBy: "name.first"
+    sortBy: "firstName"
   };
 
   componentDidMount() {
@@ -39,6 +39,12 @@ class App extends React.Component {
     this.setState({ search: this.state.pending})
   };
 
+  handleSortChange = event => {
+    this.setState({
+      sortBy: event.target
+    })
+  }
+
   render() {
     return (
       <div className="employeeTable">
@@ -60,7 +66,20 @@ class App extends React.Component {
           <tbody>
             {this.state.employees.length > 0 ? 
               this.state.employees
-              .sort((a,b) => (a.name.first > b.name.first) ? 1 : -1)
+              .sort((a,b) => {
+                if ( this.state.sortBy === "oldest" ) {
+                  return (a.dob.date > b.dob.date) ? 1 : -1;
+                }
+                else if (this.state.sortBy === "youngest") {
+                  return (a.dob.date > b.dob.date) ? -1 : 1;
+                }
+                else if (this.state.sortBy === "firstName") {
+                  return (a.name.first > b.name.first) ? 1 : -1;
+                }
+                else if (this.state.sortBy === "lastName") {
+                  return (a.name.last > b.name.last) ? 1 : -1;
+                }
+              })
               .map(thisEmployee => (
                   thisEmployee.name.first.includes(this.state.search) 
                   ||
