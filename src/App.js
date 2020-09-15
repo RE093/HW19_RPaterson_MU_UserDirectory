@@ -6,12 +6,6 @@ import Table from 'react-bootstrap/Table';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from "axios";
 
-// add in search function using the search bar,
-// add in where you click a name, it filters it alphabetically or numerically
-
-// loop through the array, 
-// if employee[i].name.includes(search value) return value and render
-
 // to sort the employees alphabetically
 // employee.name.sort()
 
@@ -19,6 +13,7 @@ class App extends React.Component {
 
   state = {
     employees: {},
+    pending: "",
     search: ""
   };
 
@@ -33,24 +28,24 @@ class App extends React.Component {
   }
 
   handleInputChange = event => {
-    const value = event.target.value;
-    const name = event.target.name;
     this.setState({
-      [name]: value
+      pending: event.target.value
     });
   };
 
   handleFormSubmit = event => {
     event.preventDefault();
-    // set search data and run the search function
+    this.setState({ search: this.state.pending})
   };
 
   render() {
     return (
       <div className="employeeTable">
         <Nav 
+          value={this.state.pending}
           handleInputChange={this.handleInputChange}
-          handleFormSubmit={this.handleFormSubmit}/>
+          handleFormSubmit={this.handleFormSubmit}
+        />
         <Table striped bordered hover>
           <thead>
             <tr>
