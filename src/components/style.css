@@ -5,9 +5,14 @@ img {
     height: 72px;
 }
 
+.navbarClass {
+    padding: 16px !important;
+}
+
 .jumbo {
     background-image: url("../assets/banner.jpeg");
     padding-left: 16px !important;
+    margin-bottom: 0px !important;
 }
 
 .jumbo h1 {

@@ -16,7 +16,7 @@ export default function Nav(props) {
                 <h1>Employee Directory</h1>
                 </div>
             </Jumbotron >
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="light" expand="lg" className="navbarClass">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Form inline className="searchBar">
@@ -34,7 +34,7 @@ export default function Nav(props) {
                     </Button>
                 </Form>
             </Navbar.Collapse>
-            <DropdownButton id="dropdown-basic-button" title="Sort By">
+            <DropdownButton id="dropdown-basic-button" variant="outline-info" title="Sort By" drop="left">
                         <Dropdown.Item as="button" value="oldest" onClick={props.handleSortChange}>Age Up</Dropdown.Item>
                         <Dropdown.Item as="button" value="youngest" onClick={props.handleSortChange}>Age Down</Dropdown.Item>
                         <Dropdown.Item as="button" value="firstName" onClick={props.handleSortChange}>First Name</Dropdown.Item>
