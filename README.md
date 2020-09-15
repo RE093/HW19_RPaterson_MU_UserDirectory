@@ -54,7 +54,7 @@ n/a
 
 ## Usage
 
-View the app <a href="">Here</a>
+View the app <a href="https://re093.github.io/HW19_RPaterson_MU_UserDirectory">Here</a>
 
 ## License
 
