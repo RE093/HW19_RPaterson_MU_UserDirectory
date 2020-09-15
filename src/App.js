@@ -14,7 +14,8 @@ class App extends React.Component {
   state = {
     employees: {},
     pending: "",
-    search: ""
+    search: "",
+    sortBy: "name.first"
   };
 
   componentDidMount() {
@@ -58,26 +59,28 @@ class App extends React.Component {
           </thead>
           <tbody>
             {this.state.employees.length > 0 ? 
-              this.state.employees.map(thisEmployee => (
-                thisEmployee.name.first.includes(this.state.search) 
-                ||
-                thisEmployee.name.last.includes(this.state.search)
-                ||
-                thisEmployee.phone.includes(this.state.search)
-                ||
-                thisEmployee.email.includes(this.state.search)
-                 ?
-                <Employee
-                  key={thisEmployee.id.value}
-                  image={thisEmployee.picture.large}
-                  name={thisEmployee.name.first + " " + thisEmployee.name.last}
-                  phone={thisEmployee.phone}
-                  email={thisEmployee.email}
-                  dob={thisEmployee.dob.date.substr(0, 10)}
-                  newEmail={"mailto:" + thisEmployee.email}
-                />
-                :
-                null
+              this.state.employees
+              .sort((a,b) => (a.name.first > b.name.first) ? 1 : -1)
+              .map(thisEmployee => (
+                  thisEmployee.name.first.includes(this.state.search) 
+                  ||
+                  thisEmployee.name.last.includes(this.state.search)
+                  ||
+                  thisEmployee.phone.includes(this.state.search)
+                  ||
+                  thisEmployee.email.includes(this.state.search)
+                   ?
+                  <Employee
+                    key={thisEmployee.id.value}
+                    image={thisEmployee.picture.large}
+                    name={thisEmployee.name.first + " " + thisEmployee.name.last}
+                    phone={thisEmployee.phone}
+                    email={thisEmployee.email}
+                    dob={thisEmployee.dob.date.substr(0, 10)}
+                    newEmail={"mailto:" + thisEmployee.email}
+                  />
+                  :
+                  null
               ))
               : 
               null
