@@ -1,10 +1,22 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
 img {
     width: auto;
     height: 72px;
 }
 
-/* Nav */
-.searchBar {
-    position: absolute;
-    right: 16px;
+.jumbo {
+    background-image: url("../assets/banner.jpeg");
+    padding-left: 16px !important;
+}
+
+.jumbo h1 {
+  background-color: #252525;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.3);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
