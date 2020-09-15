@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/HW19_RPaterson_MU_UserDirectory/static/css/main.48d436c0.chunk.css",
+    "main.js": "/HW19_RPaterson_MU_UserDirectory/static/js/main.09e36a81.chunk.js",
+    "main.js.map": "/HW19_RPaterson_MU_UserDirectory/static/js/main.09e36a81.chunk.js.map",
+    "runtime-main.js": "/HW19_RPaterson_MU_UserDirectory/static/js/runtime-main.5de34f73.js",
+    "runtime-main.js.map": "/HW19_RPaterson_MU_UserDirectory/static/js/runtime-main.5de34f73.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/HW19_RPaterson_MU_UserDirectory/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.e53e3864.chunk.js": "/HW19_RPaterson_MU_UserDirectory/static/js/2.e53e3864.chunk.js",
+    "static/js/2.e53e3864.chunk.js.map": "/HW19_RPaterson_MU_UserDirectory/static/js/2.e53e3864.chunk.js.map",
+    "index.html": "/HW19_RPaterson_MU_UserDirectory/index.html",
+    "precache-manifest.96eeb12d621266198486641026c6640c.js": "/HW19_RPaterson_MU_UserDirectory/precache-manifest.96eeb12d621266198486641026c6640c.js",
+    "service-worker.js": "/HW19_RPaterson_MU_UserDirectory/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/HW19_RPaterson_MU_UserDirectory/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.48d436c0.chunk.css.map": "/HW19_RPaterson_MU_UserDirectory/static/css/main.48d436c0.chunk.css.map",
+    "static/js/2.e53e3864.chunk.js.LICENSE.txt": "/HW19_RPaterson_MU_UserDirectory/static/js/2.e53e3864.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/HW19_RPaterson_MU_UserDirectory/static/media/banner.d96c385b.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5de34f73.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.e53e3864.chunk.js",
+    "static/css/main.48d436c0.chunk.css",
+    "static/js/main.09e36a81.chunk.js"
+  ]
+}
