@@ -12,8 +12,18 @@ export default function Nav(props) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Form inline className="searchBar">
-                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                <Button variant="outline-success">Search</Button>
+                <FormControl 
+                    type="text" 
+                    placeholder="Search" 
+                    className="mr-sm-2" 
+                    onChange={props.handleInputChange}
+                    value={props.value}
+                />
+                <Button 
+                    onClick={props.handleFormSubmit} 
+                    variant="outline-success">
+                        Search
+                </Button>
             </Form>
         </Navbar.Collapse>
         </Navbar>
