@@ -40,8 +40,9 @@ class App extends React.Component {
   };
 
   handleSortChange = event => {
+    event.preventDefault();
     this.setState({
-      sortBy: event.target
+      sortBy: event.target.value
     })
   }
 
@@ -52,6 +53,7 @@ class App extends React.Component {
           value={this.state.pending}
           handleInputChange={this.handleInputChange}
           handleFormSubmit={this.handleFormSubmit}
+          handleSortChange={this.handleSortChange}
         />
         <Table striped bordered hover>
           <thead>

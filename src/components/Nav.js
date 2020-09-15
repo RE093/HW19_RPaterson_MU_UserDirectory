@@ -3,6 +3,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 
 export default function Nav(props) {
@@ -24,6 +26,12 @@ export default function Nav(props) {
                     variant="outline-success">
                         Search
                 </Button>
+                <DropdownButton id="dropdown-basic-button" title="Sort By">
+                    <Dropdown.Item value={"oldest"} onClick={props.handleSortChange}>Age Up</Dropdown.Item>
+                    <Dropdown.Item value={"youngest"} onClick={props.handleSortChange}>Age Down</Dropdown.Item>
+                    <Dropdown.Item value={"firstName"} onClick={props.handleSortChange}>First Name</Dropdown.Item>
+                    <Dropdown.Item value={"lastName"} onClick={props.handleSortChange}>Last Name</Dropdown.Item>
+                </DropdownButton>
             </Form>
         </Navbar.Collapse>
         </Navbar>
