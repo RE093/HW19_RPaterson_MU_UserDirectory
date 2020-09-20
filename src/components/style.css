@@ -10,7 +10,7 @@ img {
 }
 
 .jumbo {
-    background-image: url("../assets/banner.jpeg");
+    background-color: #EDEDED;
     padding-left: 16px !important;
     margin-bottom: 0px !important;
 }
