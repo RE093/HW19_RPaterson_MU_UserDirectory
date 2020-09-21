@@ -54,11 +54,11 @@ n/a
 
 ## Usage
 
-View the app <a href="https://re093.github.io/HW19_RPaterson_MU_UserDirectory">Here</a>
+View the app <a href="https://re093.github.io/HW19_RPaterson_MU_UserDirectory">Here!</a>
 
 ## License
 
-This web app is  using an MIT license
+This web app is  using an MIT license.
 
 ## Version
 
@@ -66,7 +66,7 @@ This web app is  using an MIT license
 
 ## Contributing
 
-n/a
+I was the sole contributor.
 
 ## Tests
 
