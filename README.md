@@ -46,7 +46,7 @@
 
 ## Description
 
-This is an employee user directory using React.js, Axios, and React-Bootstrap to render components.
+This is an employee user directory using ReactJS, Axios, and React-Bootstrap to render components.
 
 ## Installation
 
