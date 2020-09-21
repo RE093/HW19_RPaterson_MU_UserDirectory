@@ -4,7 +4,7 @@
   </div>
 </h1>
 
-<h4 align="center">Welcome to my user directory! 👋</h4>
+<h4 align="center">Welcome to my React User Directory! 👋</h4>
 
 <p align="center">
     <a href="#">
